@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  background-color: beige;
+  padding: 15px;
+  /* border: 1px solid black; */
+}
+
+.myInput {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: none;
+}
+
+.addItem {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  position: relative;
+  padding: 15px 5px 15px 30px;
+  font-size: 15px;
+  transition: 0.2s;
+  background: #eee;
+}
+
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+ul li:hover {
+  background-color: #ddd;
+}
+
+.done {
+  display: none;
+}
+
