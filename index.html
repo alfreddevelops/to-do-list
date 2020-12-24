@@ -10,12 +10,34 @@
     <div id="myHeader" class="header">
       <h1>To Do List</h1>
       <input type="text" id="myInput" class="myInput" onfocus= "this.value='' " value="Item..." placeholder="Item...">
-      <span onClick="newItem()" class="addItem">Add</span>
+      <span onClick="newItem()" class="addItem">Add Item</span>
     </div>
 
-    <ol id="itemList" class="itemList" start="1">
+    <div id="itemContainer" class="itemContainer">
       <!-- add ordered list -->
-    </ol>
+      <ol class="itemList" id="itemList">
+
+        <div class="item" id="item">
+          <li>hi</li>
+          <span id="check">check</span>
+        </div>
+
+        <div class="item" id="itemList">
+          <li>hi</li>
+          <span id="check">check</span>
+        </div>
+
+        <div class="item" id="itemList">
+          <li>hi</li>
+          <span id="check">check</span>
+        </div>
+
+        <div class="item" id="itemList">
+          <li>hi</li>
+          <span id="check">check</span>
+        </div>
+      </ol>
+    </div>
 
     <!-- load jquery before main script -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>

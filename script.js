@@ -1,13 +1,6 @@
 $(function () {
-  // counter();
-})
 
-// function counter() {
-//   var i;
-//   for (i = 0; i < 10; i++) {
-//     console.log(i);
-//   }
-// }
+})
 
 function newItem() {
   // console.log("item added");
@@ -17,16 +10,17 @@ function newItem() {
 
   li.appendChild(text);
 
-  var n;
-  for (n = 0; n < itemList + 1; n++) {
-    console.log(n);
-  }
+  var span = document.createElement("span");
+  var button = document.createTextNode("check");
+  span.setAttribute("id", "check")
+  span.appendChild(button);
 
   if (!item) {
     alert('Please key in an item');
     console.log("no item added")
   } else {
-    document.getElementById("itemList").appendChild(li);
+    document.getElementById("item").appendChild(li);
+    document.getElementById("item").append(span);
     console.log(`${item} added to list`);
 
     function clearInput() {
