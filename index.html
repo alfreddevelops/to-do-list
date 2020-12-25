@@ -3,32 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>TO-DO LIST</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
 
     <div>
       <div class="header">
-        <p>Create new task</p>
-        <input type="text" placeholder="Item... " id="inputBox">
-        <button class="addButton">Add Item</button>
+        <p>Create a new task</p>
+        <input type="text" placeholder="Add a new task" id="inputBox" onfocus="this.value='' ">
+        <button class="addButton">Add it &#10004</button>
       </div>
 
       <!-- list of items -->
       <ol class="itemList" id="itemList">
 
         <!-- container for individual items -->
-        <div class="itemContainer" id="itemContainer">
+        <div class="itemContainer" id="itemContainer" index="0">
           <!-- item name -->
-          <li>hi</li>
+          <li>This is my first item</li>
           <!-- button to check item -->
-          <button class="check">Check</button>
-        </div>
-
-        <div class="itemContainer" id="itemContainer">
-          <li>hi</li>
-          <button class="check">Check</button>
+          <button class="remove">&#10008</button>
         </div>
 
       </ol>
