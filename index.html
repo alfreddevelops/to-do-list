@@ -7,41 +7,36 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div id="myHeader" class="header">
-      <h1>To Do List</h1>
-      <input type="text" id="myInput" class="myInput" onfocus= "this.value='' " value="Item..." placeholder="Item...">
-      <span onClick="newItem()" class="addItem">Add Item</span>
-    </div>
 
-    <div id="itemContainer" class="itemContainer">
-      <!-- add ordered list -->
+    <div>
+      <div class="header">
+        <p>Create new task</p>
+        <input type="text" placeholder="Item... " id="inputBox">
+        <button class="addButton">Add Item</button>
+      </div>
+
+      <!-- list of items -->
       <ol class="itemList" id="itemList">
 
-        <div class="item" id="item">
+        <!-- container for individual items -->
+        <div class="itemContainer" id="itemContainer">
+          <!-- item name -->
           <li>hi</li>
-          <span id="check">check</span>
+          <!-- button to check item -->
+          <button class="check">Check</button>
         </div>
 
-        <div class="item" id="itemList">
+        <div class="itemContainer" id="itemContainer">
           <li>hi</li>
-          <span id="check">check</span>
+          <button class="check">Check</button>
         </div>
 
-        <div class="item" id="itemList">
-          <li>hi</li>
-          <span id="check">check</span>
-        </div>
-
-        <div class="item" id="itemList">
-          <li>hi</li>
-          <span id="check">check</span>
-        </div>
       </ol>
     </div>
 
+
     <!-- load jquery before main script -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="script.js"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
