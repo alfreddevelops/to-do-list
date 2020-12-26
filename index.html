@@ -12,7 +12,7 @@
       <div class="header">
         <p>Create a new task</p>
         <input type="text" placeholder="Add a new task" id="inputBox" onfocus="this.value='' ">
-        <button class="addButton">Add it &#10004</button>
+        <button class="addButton">Add it</button>
       </div>
 
       <!-- list of items -->
@@ -20,10 +20,21 @@
 
         <!-- container for individual items -->
         <div class="itemContainer" id="itemContainer" index="0">
+
+          <!-- tick task -->
+          <div class="checkItem">
+            <p class="tick">&#10004</p>
+          </div>
+
           <!-- item name -->
-          <li>This is my first item</li>
+          <!-- use input to be able to edit name -->
+          <input type="text" value="hi"></input>
+
+          <p>Task due:</p>
+
           <!-- button to check item -->
           <button class="remove">&#10008</button>
+
         </div>
 
       </ol>

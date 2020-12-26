@@ -1,6 +1,7 @@
 $(function () {
     // console.log("js working");
     $(".addButton").on("click", addItem);
+    $(".checkItem").on("click", checkItem);
     $(".remove").on("click", removeItem);
 })
 
@@ -10,7 +11,9 @@ function addItem() {
     // create template with elements
     const template = `
         <div class="itemContainer" id="itemContainer">
-            <li>${itemName}</li>
+        <div class="checkItem"></div>
+            <input type="text" value="${itemName}"></input>
+            <p>Task due:</p>
             <button class="remove" onclick="removeItem()">&#10008</button>
         </div>
     `;
@@ -24,9 +27,15 @@ function addItem() {
     }
 }
 
+function checkItem() {
+    // console.log("checked");
+    $(".tick").toggleClass("checked");
+}
+
+
 function removeItem() {
     console.log("item removed");
     
     // removes x instead of container
-    $(this).addClass("removed");
+    // $(this).addClass("removed");
 }
