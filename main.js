@@ -11,7 +11,9 @@ function addItem() {
     // create template with elements
     const template = `
         <div class="itemContainer" id="itemContainer">
-        <div class="checkItem"></div>
+        <div class="checkItem">
+            <p class="tick">&#10004</p>
+        </div>
             <input type="text" value="${itemName}"></input>
             <p>Task due:</p>
             <button class="remove" onclick="removeItem()">&#10008</button>
@@ -35,7 +37,8 @@ function checkItem() {
 
 function removeItem() {
     console.log("item removed");
-    
+    // var container = document.getElementById(itemContainer);
+    // container.addClass("removed");   
     // removes x instead of container
     // $(this).addClass("removed");
 }

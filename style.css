@@ -102,10 +102,6 @@ html {
   margin-left: 5%;
 }
 
-.remove {
-  float: right;
-  transform: translate(100%);
-}
 
 .removed {
   display: none;
