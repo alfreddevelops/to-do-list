@@ -2,10 +2,12 @@ $(function () {
     // console.log("js working");
     $(".addButton").on("click", addItem);
     $(".checkItem").on("click", checkItem);
-    $(".remove").on("click", removeItem);
+
 })
 
+
 function addItem() {
+    $(".remove").on("click", removeItem);
     var itemName = document.getElementById("inputBox").value;
 
     // create template with elements
@@ -27,6 +29,10 @@ function addItem() {
         var itemList = document.getElementById("itemList");
         itemList.insertAdjacentHTML("afterbegin", template);
     }
+
+    function removeItem() {
+        console.log("item removed");
+    }
 }
 
 function checkItem() {
@@ -35,10 +41,3 @@ function checkItem() {
 }
 
 
-function removeItem() {
-    console.log("item removed");
-    // var container = document.getElementById(itemContainer);
-    // container.addClass("removed");   
-    // removes x instead of container
-    // $(this).addClass("removed");
-}
